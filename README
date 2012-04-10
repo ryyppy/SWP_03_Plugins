@@ -1,1 +1,6 @@
-This file was created by IntelliJ IDEA 11.1.1 for binding GitHub repository
+Simples Plugin-Pattern-Beispiel.
+Besteht aus 3 Teilprojekten:
+
+- CRMSoft: Das Hauptprogramm, dass die Plugins als JAR-File über einen URLClassLoader ladet und in eine GUI mit einbezieht
+- PluginInterfaces: Schnittstelle für die konkreten Plugins, die dann im Hauptprogramm verwendet werden (wird als JAR verteilt)
+- MyFirstPlugin: Ein konkretes Plugin, dass das PluginInterfaces.jar ladet und ebenfalls ein JAR - File für das Hauptprogramm generiert
